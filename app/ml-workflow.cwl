@@ -4,6 +4,10 @@ class: Workflow
 cwlVersion: v1.0
 requirements:
   ScatterFeatureRequirement: {}
+
+hints:
+  DockerRequirement:
+    dockerPull: ratinacnikola/ml-workflow
 inputs:
   data: File
   k: int

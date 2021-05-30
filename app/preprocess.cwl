@@ -5,9 +5,9 @@ class: CommandLineTool
 
 
 baseCommand: preprocess.py
-hints:
-  DockerRequirement:
-    dockerPull: ratinacnikola/ml-workflow
+# hints:
+#   DockerRequirement:
+#     dockerPull: ratinacnikola/ml-workflow
 inputs:  
   data:
     type: File

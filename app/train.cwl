@@ -4,9 +4,9 @@ cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: train.py
 
-hints:
-  DockerRequirement:
-    dockerPull: ratinacnikola/ml-workflow
+# hints:
+#   DockerRequirement:
+#     dockerPull: ratinacnikola/ml-workflow
 
 inputs:
   train_data:

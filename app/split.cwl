@@ -6,9 +6,9 @@ class: CommandLineTool
 
 
 baseCommand: split-k-fold.py
-hints:
-  DockerRequirement:
-    dockerPull: ratinacnikola/ml-workflow
+# hints:
+#   DockerRequirement:
+#     dockerPull: ratinacnikola/ml-workflow
 
 inputs:
   data: 
