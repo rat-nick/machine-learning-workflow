@@ -1,0 +1,12 @@
+FROM python:3.8-slim-buster
+COPY preprocess.py /usr/bin/preprocess.py
+COPY split-k-fold.py /usr/bin/split-k-fold.py
+COPY train.py /usr/bin/train.py
+RUN mkdir /app
+WORKDIR /app
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+RUN chmod a+x /usr/bin/preprocess.py
+RUN chmod a+x /usr/bin/split-k-fold.py
+RUN chmod a+x /usr/bin/train.py
+RUN ls -la

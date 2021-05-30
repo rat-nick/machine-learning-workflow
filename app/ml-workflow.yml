@@ -1,0 +1,4 @@
+data:
+  class: File
+  path: dataset_31_credit-g.csv
+k: 10
